@@ -47,6 +47,11 @@ body {
   border-radius: 50%;
 }
 
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .company-info h3 {
   font-size: 0.9rem;
   color: #5ba4a4;
@@ -117,4 +122,76 @@ hr {
 .job-requirements li:hover {
   background: #5ba4a4;
   color: #fff;
+}
+
+/* Stylizacja górnego nagłówka */
+.top-header {
+  background: #5ba4a4; /* Kolor tła */
+  height: 150px; /* Wysokość nagłówka */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0 5px 10px rgba(91, 164, 164, 0.5);
+  margin-bottom: 2rem;
+}
+
+.filter-bar {
+  background: #fff;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(91, 164, 164, 0.3);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  background: #eef6f6;
+  color: #5ba4a4;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-tag span {
+  background: #5ba4a4;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.filter-tag:hover {
+  background: #5ba4a4;
+  color: #fff;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #5ba4a4;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.clear-btn:hover {
+  color: #2b3939;
 }
